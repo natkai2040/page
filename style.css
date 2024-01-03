@@ -1,3 +1,11 @@
+.transparentbutton {
+    background: none;
+    border: solid 2px transparent
+}
+.transparentbutton:hover {
+    border-color: grey;
+}
+
 .border {
     border: solid 2px lightsalmon; 
 }
