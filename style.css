@@ -4,7 +4,7 @@
     $azul: #246eb9ff;
     $hunyadi-yellow: #edb458ff;
     $fulvous: #e8871eff;
-    $burnt-umber: #823329ff;
+    $burnt-umber: #edb458ff;
 */
 
 /* 
@@ -29,65 +29,95 @@ body {
 h1 { 
     color: rgb(21, 63, 106);
     font-size: 4em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-footer  {
+.divider {
+    /* color: rgb(21, 63, 106); */
+    /* height: 1em; */
+    /* background-color: rgb(21, 63, 106); */
+    border: .5em solid rgb(21, 63, 106);
+    border-radius: .5em;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    /* margin-bottom: 4%; */
+}
+
+/* footer  {
     margin: 0px; 
     padding: 0px; 
     background-color: rgb(21, 63, 106);
-}
+} */
 
 .app {
-    background-color:#ffb650ff;
+    background-color: rgb(251, 212, 154);
+    
+    background-image: url('./images/bg_1.svg');
+    background-size: cover;
+    background-position: relative;
+    background-attachment: fixed;
 }
 
 .navbar { 
     display:flex; 
     flex:1;
-    justify-content:right;
+    justify-content:center;
     height:fit-content;
-    color: #77b0fd;
+    color: #153F6A;
+    padding: 1%;
         /* background-color: #77b0fd; */
 }
 
 .navbar-link {
-    border: 2px solid #77b0fd; 
-    border-radius: 2px;
+    border: .05% solid #153F6A;
+    border-radius: .05%;
     margin: 0% .5%;
+    padding: .1% .3%;
+    font-size: 3em;
     /* margin: 10px 40px 0px 40px; */
 }
+
 .icons {
     height: fit-content;
     margin: 6px 8px;
 }
 .icon { 
-    width: 30%;
+    /* width: 30%; */
+    height: 2em;
+    width: 3em;
+    font-size: 3em;
 }
+
 .transparentbutton {
-    background: none;
-    border: solid 2px transparent;
-    border-radius: 4px;
+    /* background: none;
+    border: solid 1em transparent;
+    border-radius: 1em; */
     text-decoration: none;
-    height: 100%;
-    width: 100%;
-    padding: 0px;
+    /* padding: 0px; */
 }
 
 .transparentbutton:hover {
     border-color: grey;
-
 }
 
 .border {
-    border: solid  1px black; 
+    border: transparent; 
     /* border-radius: 8px; */
 }
 
 .textbox {
-    background-color: #fff3d877;
+    background-color: #fff3d8AA;
     border-radius: 16px;
     color: rgb(21, 63, 106);
     font-size: 3em;
+    margin: 3% 0% 3% 0%;
+    padding: 1em; 
+}
+
+.textbox-link {
+    margin-top: 3%;
 }
 
 .main-container { 
@@ -110,6 +140,7 @@ footer  {
 .project-container { 
     width: 80%;
     padding: 1%; /** TODO: hardcoded*/
+    margin: 2% 0% 2% 0%;
 }
 
 .sidebyside { 
@@ -121,4 +152,22 @@ footer  {
 
 .profilepic {
     width: 30%;
+    margin: 1% 3% 1% 3%;
+    align-content: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.text-side {
+    margin: 1% 3% 1% 3%;
+    width: fit-content;
+}
+
+.project-image {
+    width: 30%;
+    height: auto; 
+    margin: 1% 3% 1% 3%;
 }
