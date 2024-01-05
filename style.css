@@ -6,20 +6,62 @@
     $fulvous: #e8871eff;
     $burnt-umber: #823329ff;
 */
+
+/* 
+#d7ffff
+#77b0fd
+#ffd578
+#ffb650
+#d47b6c
+*/
+
+/** Allows body to cover entire page */
+html {
+    margin: 0px; 
+    padding: 0px; 
+}
+body {
+    margin: 0px; 
+    padding: 0px; 
+    font-size: 62.5%;
+}
+
+h1 { 
+    color: rgb(21, 63, 106);
+    font-size: 4em;
+}
+
+footer  {
+    margin: 0px; 
+    padding: 0px; 
+    background-color: rgb(21, 63, 106);
+}
+
 .app {
-    background-color: rgb(228, 255, 255);
+    background-color:#ffb650ff;
 }
 
 .navbar { 
     display:flex; 
     flex:1;
-    justify-content:space-around;
-    background-color: #246eb9ff;
+    justify-content:right;
     height:fit-content;
+    color: #77b0fd;
+        /* background-color: #77b0fd; */
+}
+
+.navbar-link {
+    border: 2px solid #77b0fd; 
+    border-radius: 2px;
+    margin: 0% .5%;
+    /* margin: 10px 40px 0px 40px; */
 }
 .icons {
     height: fit-content;
-    width: 100%; 
+    margin: 6px 8px;
+}
+.icon { 
+    width: 30%;
 }
 .transparentbutton {
     background: none;
@@ -30,14 +72,22 @@
     width: 100%;
     padding: 0px;
 }
+
 .transparentbutton:hover {
     border-color: grey;
 
 }
 
 .border {
-    border: solid 4px #246eb9ff; 
-    border-radius: 8px;
+    border: solid  1px black; 
+    /* border-radius: 8px; */
+}
+
+.textbox {
+    background-color: #fff3d877;
+    border-radius: 16px;
+    color: rgb(21, 63, 106);
+    font-size: 3em;
 }
 
 .main-container { 
@@ -52,6 +102,16 @@
     padding: 20px; /** TODO: hardcoded*/
 }
 
+.profile-container { 
+    width: 80%;
+    padding: 1%; /** TODO: hardcoded*/
+}
+
+.project-container { 
+    width: 80%;
+    padding: 1%; /** TODO: hardcoded*/
+}
+
 .sidebyside { 
     display:flex; 
     flex: 1;
@@ -60,5 +120,5 @@
 }
 
 .profilepic {
-    height: 400px; /** TODO: hardcoded*/
+    width: 30%;
 }
