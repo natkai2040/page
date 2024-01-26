@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "title": "Art Arranger Web App", 
+        "description-short": "Node/ExpressJS app that allows users to arrange public art onto a virtual wall, as well as share and rank different virtual walls.",
+        "image": "artarrangerIMAGE1.png", 
+        "link": "https://github.com/natkai2040/art-arranger-app", 
+        "link-label": "repository"
+    },
+    {
+        "id": 2,
+        "title": "VAE MIDI Training and Music Generation", 
+        "description-short": "I created a VAE that trains on visualized MIDI files to generate new music.", 
+        "image": "piatorolltrainingdata.png", 
+        "link": "https://www.kaggle.com/code/nathanielwai/piano-roll-vae", 
+        "link-label": "kaggle"
+    },
+    {
+        "id": 3,
+        "title": "QuickReads Frontend", 
+        "description-short": "I worked with six developers to create an app that provides a feed of AI-summarized news stories. I was in charge of the frontend.",
+        "image": "QuickReadsLogo.png",
+        "link": "https://github.com/stgandham1/QuickReads", 
+        "link-label": "repository"
+    },
+    {
+        "id": 4,
+        "title": "Coat of Arms Vector Art", 
+        "description-short": "I was commissioned by my local church to make vector art for T-Shirts for their summer camp.", 
+        "image": "keepersofthekingdom.png",
+        "link": "", 
+        "link-label": "repository"
+    }
+]
