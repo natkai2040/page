@@ -2,7 +2,7 @@
 <html lang="en-US">
 
 <head>
-    <title>Nathaniel's Page</title>
+    <title>Nathaniel Wai - Projects</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -11,7 +11,7 @@
     <div class="app" id = "app">
 
          <!-- NAVBAR -->
-        <div class="navbar" >  
+         <div class="navbar" >  
             <div class="navbar-link"> 
                 <a href="./index.html" title="Home" target="_self" >
                     Home
@@ -39,40 +39,7 @@
 
         <div class="main-container" id="main-container">
             
-            <!-- INTRODUCTION -->
-    
-            <div class="profile-container border sidebyside" >
-
-                <div class="text-side">
-                    <h1>Hi! I'm Nathaniel Wai</h1>
-
-                    <div class="textbox">
-                        My name is Nathaniel. I like to create apps and art!
-                        
-                    </div>
-
-                    <!-- Icon Links to other social media sites -->
-
-                    <div class="icons">
-                        <a class="transparentbutton" href="https://github.com/natkai2040" target="_blank" title="My Github">
-                            <img class="icon" src="icons/github.svg"/>
-                        </a>
-                        <a class="transparentbutton" href="https://www.linkedin.com/in/nathaniel-wai/" target="_blank" title="My LinkedIn">
-                            <img class="icon" src="icons/linkedin.svg"/>
-                        </a>
-                        <a class="transparentbutton" href="mailto:nkcwai@gmail.com" title="nkcwai@gmail.com">
-                            <img class="icon" src="icons/envelope-solid.svg"/>
-                        </a>
-                    </div>
-                </div>
-                <div class="profilepic_container">
-                    <img class="profilepic" width="776" height="919" src="images/headshot.png"/>
-                </div>
-
-            </div>
-            
-            <h1>HIGHLIGHTED WORK</h1>
-
+            <h1>PROJECT PAGE</h1>
             <hr class="divider">
              
             <script>
@@ -131,15 +98,14 @@
                     text_side_container.className = "text-side"; 
                     textbox_container.className = "textbox"
                     link_container.className = "textbox-link"; 
-                    link.target= "_blank"; 
-
+                    link_container.target = "_blank"; 
 
                     title.innerHTML = project.title; 
                     thumbnail.src = `./images/${project.image}`; // images should be in the ./images folder
                     // thumbnail.width = project.image_w;
                     // thumbnail.height = project.image_h;
                     textbox_container.innerHTML = project["description-short"];
-                    link.href = project.link;
+                    link.href = project.link; 
                     link.innerHTML = project["link-label"]; 
 
                     link_container.appendChild(link); 
@@ -176,16 +142,9 @@
             </script>
             
         </div>
-        <footer>
-            <div class="footer_box" style="color: white; padding:1em; ">
-                 
-                <a href="https://github.com/natkai2040/page" target="_blank" style="color: white;">Website coded in HTML/CSS/JS</a>
-            </div>
-        </footer>
     </div>
+    
 
 </body>
-
-
 
 </html>
