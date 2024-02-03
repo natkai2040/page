@@ -41,6 +41,14 @@
             
             <h1>PROJECT PAGE</h1>
             <hr class="divider">
+
+
+            <!-- <div> 
+                List Projects by Date, Course, Language
+                Sort by Date... Course... Language...
+                Link to Project Page? Or Render a Text Section based on the Project? 
+                Render a Text Section. 
+            </div> -->
              
             <script>
                 const data = [
@@ -104,6 +112,7 @@
                     thumbnail.src = `./images/${project.image}`; // images should be in the ./images folder
                     // thumbnail.width = project.image_w;
                     // thumbnail.height = project.image_h;
+                    thumbnail.style = `max-height: ${window.screen.height};`
                     textbox_container.innerHTML = project["description-short"];
                     link.href = project.link; 
                     link.innerHTML = project["link-label"]; 
@@ -142,6 +151,14 @@
             </script>
             
         </div>
+        
+        <footer>
+            <div class="footer_box"style="color: white; padding:1em; ">
+                 
+                <a href="https://github.com/natkai2040/page" target="_blank" style="color: white;">Website coded in HTML/CSS/JS</a>
+            </div>
+        </footer>
+        
     </div>
     
 

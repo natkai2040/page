@@ -39,109 +39,70 @@
 
         <div class="main-container" id="main-container">
             
-            <h1>ART GALLERY</h1>
+            <h1>ART WORK</h1>
             <hr class="divider">
-             
+            
+                        
+            <div id ="artwork_container">
+
+                <div>
+                    <video class ="art-column-item" controls="controls" >
+                        <source class ="art-column-item" src="./artwork/1 final donut anim 1-2400001-0240.mp4" type="video/mp4" />
+                    </video>
+                </div>
+                <div>
+                    <video class ="art-column-item" controls="controls" >
+                        <source class ="art-column-item" src="./artwork/improved shallan render HD 0001-0240.mp4" type="video/mp4" />
+                    </video>
+                </div>
+
+            </div>
+            
+                
+
+                <!-- <video controls="controls">
+                    <source src="./artwork/improved shallan render HD 0001-0240.mp4" type="video/mp4" />
+                </video> -->
+
+
             <script>
-                const data = [
-                    {
-                        "id": 1,
-                        "title": "Art Arranger Web App", 
-                        "description-short": "Node/ExpressJS app that allows users to arrange public art onto a virtual wall, as well as share and rank different virtual walls.",
-                        "image": "artarrangerIMAGE1.png", 
-                        "image_w": 5, 
-                        "image_h": 5, 
-                        "link": "https://github.com/natkai2040/art-arranger-app", 
-                        "link-label": "repository"
-                    },
-                    {
-                        "id": 2,
-                        "title": "VAE MIDI Training and Music Generation", 
-                        "description-short": "I created a VAE that trains on visualized MIDI files to generate new music.", 
-                        "image": "piatorolltrainingdata.png", 
-                        "link": "https://www.kaggle.com/code/nathanielwai/piano-roll-vae", 
-                        "link-label": "kaggle"
-                    },
-                    {
-                        "id": 3,
-                        "title": "QuickReads Frontend", 
-                        "description-short": "I worked with six developers to create an app that provides a feed of AI-summarized news stories. I was in charge of the frontend.",
-                        "image": "QuickReadsLogo.png",
-                        "link": "https://github.com/stgandham1/QuickReads", 
-                        "link-label": "repository"
-                    },
-                    {
-                        "id": 4,
-                        "title": "Coat of Arms Vector Art", 
-                        "description-short": "I was commissioned by my local church to make vector art for T-Shirts for their summer camp.", 
-                        "image": "keepersofthekingdom.png",
-                        "link": "", 
-                        "link-label": "repository"
-                    }
-                ]; 
-                console.log(data)
+                const artwork_data = [
+                    //{"id": 1, "title": "", "description-short": "", "image_w": 0, "image_h": 0, "link": "", "link-label": "", "image": "artwork/1 final donut anim 1-2400001-0240.mp4" },
+                    //{"id": 2, "title": "", "description-short": "", "image_w": 0, "image_h": 0, "link": "", "link-label": "", "image": "artwork/improved shallan render HD 0001-0240.mp4" },
+                    {"id": 3, "title": "", "description-short": "", "image_w": 0, "image_h": 0, "link": "", "link-label": "", "image": "artwork/keepersofthekingdom.png" },
+                    {"id": 4, "title": "", "description-short": "", "image_w": 0, "image_h": 0, "link": "", "link-label": "", "image": "artwork/mindanao_sc_logo.png" },
+                    {"id": 5, "title": "", "description-short": "", "image_w": 0, "image_h": 0, "link": "", "link-label": "", "image": "artwork/sc_ring_logo_nofill.png" },
+                    {"id": 6, "title": "", "description-short": "", "image_w": 0, "image_h": 0, "link": "", "link-label": "", "image": "artwork/sc_ring_logo_whitebg.png" },
+                    {"id": 7, "title": "", "description-short": "", "image_w": 0, "image_h": 0, "link": "", "link-label": "", "image": "artwork/vbs2020_shield.jpg" },
+                    {"id": 8, "title": "", "description-short": "", "image_w": 0, "image_h": 0, "link": "", "link-label": "", "image": "artwork/vbs2023_armor.jpg" },
+                    {"id": 9, "title": "", "description-short": "", "image_w": 0, "image_h": 0, "link": "", "link-label": "", "image": "artwork/vbs2023_castle.jpg" },
+                    {"id": 10, "title": "", "description-short": "", "image_w": 0, "image_h": 0, "link": "", "link-label": "", "image": "artwork/zoomeranginheritalpha.png" },
+                    {"id": 11, "title": "", "description-short": "", "image_w": 0, "image_h": 0, "link": "", "link-label": "", "image": "artwork/zoomeranglogo_2.png" },
+                ]
+                console.log(artwork_data)
 
-                const main_container = document.getElementById("main-container"); 
-
+                const artwork_container = document.getElementById("artwork_container"); 
+                
                 // CREATE DATA ELEMENT
-                data.forEach((project) => { 
-                    const project_container = document.createElement("div"); 
-                    const thumbnail = document.createElement("img"); 
-                    const text_side_container = document.createElement("div"); 
-                    const title = document.createElement("h1"); 
-                    const textbox_container = document.createElement("div"); 
-                    const link_container = document.createElement("div"); 
-                    const link = document.createElement("a"); 
+                artwork_data.forEach((project) => { 
+                    const single_art_container = document.createElement("div"); 
+                    const thumbnail = document.createElement("img");
+                    // single_art_container.class = "single_art_container"; 
+                    thumbnail.className = "art-column-item"; 
+                    thumbnail.src = `./${project.image}`; // images should be in the ./images folder
 
-                    project_container.className = "project-container border sidebyside"; 
-                    thumbnail.className = "project-image"; 
-                    text_side_container.className = "text-side"; 
-                    textbox_container.className = "textbox"
-                    link_container.className = "textbox-link"; 
-                    link_container.target = "_blank"; 
-
-                    title.innerHTML = project.title; 
-                    thumbnail.src = `./images/${project.image}`; // images should be in the ./images folder
-                    // thumbnail.width = project.image_w;
-                    // thumbnail.height = project.image_h;
-                    textbox_container.innerHTML = project["description-short"];
-                    link.href = project.link; 
-                    link.innerHTML = project["link-label"]; 
-
-                    link_container.appendChild(link); 
-                    textbox_container.appendChild(link_container); 
-                    text_side_container.appendChild(title); 
-                    text_side_container.appendChild(textbox_container); 
-                    // alternate to put thumbnail or textbox on left or right
-                    if (project.id%2 == 0){
-                        project_container.appendChild(thumbnail); 
-                        project_container.appendChild(text_side_container); 
-                    } else {
-                        project_container.appendChild(text_side_container); 
-                        project_container.appendChild(thumbnail); 
-                    }
-
-                    // GUIDE TO DIV: 
-                    // <div class="project-container border sidebyside" >
-                    //     <img class="project-image" src="images/QuickReadsLogo.png"/>
-                    //     <div class="text-side">
-                    //         <h1>QuickReads Frontend</h1>
-                    //         <div class="textbox">
-                    //             I worked with six developers to create an app that provides a feed of AI-summarized news stories. I was in charge of the frontend. 
-                    //             <div class="textbox-link">
-                    //                 <a href="https://github.com/stgandham1/QuickReads" target="_blank">
-                    //                     QuickReads Frontend
-                    //                 </a>
-                    //             </div>
-                    //         </div>
-                    //     </div>
-                    // </div>
-
-                    main_container.appendChild(project_container); 
+                    single_art_container.appendChild(thumbnail); 
+                    artwork_container.appendChild(single_art_container); 
                 })
             </script>
             
         </div>
+        <footer>
+            <div class="footer_box"style="color: white; padding:1em; ">
+                 
+                <a href="https://github.com/natkai2040/page" target="_blank" style="color: white;">Website coded in HTML/CSS/JS</a>
+            </div>
+        </footer>
     </div>
     
 

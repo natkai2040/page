@@ -118,6 +118,7 @@
 
                 // CREATE DATA ELEMENT
                 data.forEach((project) => { 
+
                     const project_container = document.createElement("div"); 
                     const thumbnail = document.createElement("img"); 
                     const text_side_container = document.createElement("div"); 
@@ -136,6 +137,7 @@
 
                     title.innerHTML = project.title; 
                     thumbnail.src = `./images/${project.image}`; // images should be in the ./images folder
+
                     // thumbnail.width = project.image_w;
                     // thumbnail.height = project.image_h;
                     textbox_container.innerHTML = project["description-short"];
@@ -177,7 +179,7 @@
             
         </div>
         <footer>
-            <div class="footer_box" style="color: white; padding:1em; ">
+            <div class="footer_box"style="color: white; padding:1em; ">
                  
                 <a href="https://github.com/natkai2040/page" target="_blank" style="color: white;">Website coded in HTML/CSS/JS</a>
             </div>
