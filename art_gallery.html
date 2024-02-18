@@ -12,23 +12,23 @@
 
          <!-- NAVBAR -->
          <div class="navbar" >  
-            <div class="navbar-link"> 
+            <div class="navbar-link grow"> 
                 <a href="./index.html" title="Home" target="_self" >
                     Home
                 </a>
             </div>  
-            <div class="navbar-link"> 
+            <div class="navbar-link grow"> 
                 <a href="./project_page.html" title="Projects" target="_self" >
                     Projects
                 </a>
             </div>  
-            <div class="navbar-link"> 
+            <div class="navbar-link grow"> 
                 <a href="./art_gallery.html" title="Art" target="_self" >
                     Art
                 </a>
             </div>  
             
-            <div class="navbar-link">
+            <div class="navbar-link grow">
                 <a href="./attachments/Nathaniel Wai Resume_0823.pdf" title="Nathaniel's CV" target="_blank" >
                     CV
                 </a>
@@ -41,7 +41,7 @@
             <h1>ART PORTFOLIO</h1>
             <div class="icons">
                 <a class="transparentbutton" href="https://www.instagram.com/natanco.art" target="_blank" title="My Art Instagram">
-                    <img class="icon" src="icons/instagram.svg"/>
+                    <img class="icon grow" src="icons/instagram.svg"/>
                 </a>
             </div>
             <h2>I am an artist with a focus in digital design and illustration.</h2>
@@ -54,7 +54,7 @@
             <div id="myModal" class ="modal">
                 <div class="modal-content"> 
                     <span class="close">&times;</span>
-                    <div id="modal-body"> 
+                    <div id="modal-body" class="modal-body"> 
                     </div>
                 </div>
             </div>
@@ -64,74 +64,93 @@
 
             <div class="gallery_row">
                 <div class="gallery_col">
-                    <img id="art_wild" class="thumbnail"  src="artwork/in_the_wild_white.PNG"/>
+                    <img id="art_keepers" class="art_thumbnail grow" src="artwork/keepers_white.png"/>
                 </div>
                 <div class="gallery_col">
-                    <img id="art_rocky" class="thumbnail" src="artwork/Rocky_white.png"/>
-                </div>
-                <div class="gallery_col">
-                    <img id="art_zoomerang" class="thumbnail" src="artwork/zoomerang_white.png"/>
-                </div>
-                <div class="gallery_col">
-                    <img id="art_keepers" class="thumbnail" src="artwork/keepers_white.png"/>
+                    <img id="art_zoomerang" class="art_thumbnail grow" src="artwork/zoomerang_white.png"/>
                 </div>
             </div>
 
-            <h2>DIGITAL LOGOS</h2>
+            <div class="gallery_row">
+                <div class="gallery_col">
+                    <img id="art_wild" class="art_thumbnail grow"  src="artwork/in_the_wild_white.PNG"/>
+                </div>
+                <div class="gallery_col">
+                    <img id="art_rocky" class="art_thumbnail grow" src="artwork/Rocky_white.png"/>
+                </div>
+            </div>
+
+            <h2>DIGITAL ARTWORK</h2>
             
             <div id="art_small" class="gallery_row">
                 <div class="gallery_col">
-                    <img  class="thumbnail"  src="artwork/SmallChurchLogo/sc_ring_logo_filled.png"/>
+                    <img  class="art_thumbnail grow"  src="artwork/SmallChurchLogo/sc_ring_logo_filled.png"/>
                 </div>
                 <div class="gallery_col">
-                    <img class="thumbnail" src="artwork/SmallChurchLogo/mindanao_sc_logo.png"/>
+                    <img class="art_thumbnail grow" src="artwork/SmallChurchLogo/mindanao_sc_logo.png"/>
                 </div>
                 <div class="gallery_col">
-                    <img class="thumbnail" src="artwork/SmallChurchLogo/sc_pop_dark_gradient.png"/>
+                    <img class="art_thumbnail grow" src="artwork/SmallChurchLogo/sc_pop_dark_gradient.png"/>
+                </div>
+            </div>
+            <div id="art_quickreads" class="gallery_row">
+                <div class="gallery_col">
+                    <img  class="art_thumbnail grow" style="background-color: #fefefe; border-radius: 1em; padding: 1em;" src="artwork/Quickreads/quickreads_category_icon.png"/>
+                </div>
+                <div class="gallery_col">
+                    <img class="art_thumbnail grow" style="background-color: #fefefe; border-radius: 1em; padding: 1em;" src="artwork/Quickreads/quickreads_feed_icon.png"/>
+                </div>
+                <div class="gallery_col">
+                    <img class="art_thumbnail grow" style="background-color: #fefefe; border-radius: 1em; padding: 1em;" src="artwork/Quickreads/quickreads_newsletter_icon.png"/>
+                </div>
+                <div class="gallery_col">
+                    <img class="art_thumbnail grow" style="background-color: #fefefe; border-radius: 1em; padding: 1em;" src="artwork/Quickreads/quickreads_settings_icon.png"/>
                 </div>
             </div>
 
-            <h2>ANIMATION AND 3D ART</h2>
+
+            <h2>ANIMATION AND 3D ARTWORK</h2>
 
             <div class="gallery_row">
                 <div class="gallery_col">
                     <div class="gallery_col">
-                        <img id="art_donut" class="thumbnail" src="artwork/donut_thumbnail.png"/>
+                        <img id="art_donut" class="art_thumbnail grow" src="artwork/donut_thumbnail.png"/>
                     </div>
                 </div>
                 <div class="gallery_col">
                     <video class ="modal-image" controls="controls" >
-                        <source class ="thumbnail" src="./artwork/donut_anim.mp4" type="video/mp4" />
+                        <source class ="art_thumbnail" src="./artwork/donut_anim.mp4" type="video/mp4" />
                     </video>
                 </div>
                 <div class="gallery_col">
                     <video class ="modal-image" controls="controls" >
-                        <source class ="thumbnail" src="./artwork/shallan_anim.mp4" type="video/mp4" />
+                        <source class ="art_thumbnail" src="./artwork/shallan_anim.mp4" type="video/mp4" />
                     </video>
                 </div>
                 <div class="gallery_col">
                     <div class="gallery_col">
-                        <img id="art_shallan" class="thumbnail" src="artwork/shallan_thumbnail.png"/>
+                        <img id="art_shallan" class="art_thumbnail grow" src="artwork/shallan_thumbnail.png"/>
                     </div>
                 </div>
             </div>
 
 
-            <h2>MISC ART</h2>
+            <h2>MISC ILLUSTRATION</h2>
             <div class="gallery_row">
                 <div class="gallery_col">
-                    <img id="art_knifophia" max_height="100px" class="thumbnail" src="artwork/kniphophia.png"/>
+                    <img id="art_knifophia" max_height="100px" class="art_thumbnail grow" src="artwork/kniphophia.png"/>
                 </div>
                 <div class="gallery_col">
-                    <img id="art_urchins" max_height="100px" class="thumbnail" src="artwork/urchins.png"/>
-                </div>
-                <div class="gallery_col">
-                    <img id="art_whiteboard" max_height="100px" class="thumbnail" src="artwork/whiteboard.png"/>
-                </div>
+                    <img id="art_urchins" max_height="100px" class="art_thumbnail grow" src="artwork/urchins.png"/>
+                </div>  
             </div>
-                        
-            <div id ="artwork_container">
-
+            <div class="gallery_row">  
+                <!-- <div class="gallery_col">
+                    <img id="art_whiteboard" max_height="100px" class="art_thumbnail grow" src="artwork/whiteboard.png"/>
+                </div> -->
+                <div class="gallery_col" >
+                    <img id="art_dnd" class="art_thumbnail grow"  src="artwork/DND_crop.png"/>
+                </div>
             </div>
 
             <script>
@@ -152,13 +171,13 @@
                 // link together each artwork with its modal and title.
 
                 const artwork_data = [
-                    {"id": 1, "element_id": "art_donut", "title": "Donut Animation (2024)", "description-short": "My first render in blender and my introduction to the program.", "image_w": 0, "image_h": 0, "link": "", "link-label": "", "image": "",
+                    {"id": 1, "element_id": "art_donut", "title": "Donut Animation (2024)", "description-short": "My first render in blender and my introduction to the program.", "image_w": 0, "image_h": 0, "link": "", "link-label": "", "image": "artwork/donut_thumbnail.png",
                         "subimages" : []
                     },
-                    {"id": 2, "element_id": "art_shallan", "title": "Stormlight Archive Scene (2024)", "description-short": "This is a Low-Poly 3D render depicting two characters in a scene in the book \"The Way of Kings\"", "image_w": 0, "image_h": 0, "link": "", "link-label": "", "image": "", 
+                    {"id": 2, "element_id": "art_shallan", "title": "Stormlight Archive Scene (2024)", "description-short": "This is a low-poly 3D render depicting two characters in a scene in the book \"The Way of Kings\"", "image_w": 0, "image_h": 0, "link": "", "link-label": "", "image": "", 
                         "subimages" : []
                     },
-                    {"id": 3, "element_id": "art_keepers", "title": "Keepers of the Kingdom Logo (2023)", "description-short": "I was hired by my church to make Vector art for their annual Bible summer camp. \n I presented several options for the design, and the committee selected the coat of arms logo. \n I incorporated several biblical motifs within the design, grape vines, a dove, the trinity, a crown, and a cross.", "image_w": 0, "image_h": 0, "link": "", "link-label": "", "image": "",
+                    {"id": 3, "element_id": "art_keepers", "title": "Keepers of the Kingdom Logo (2023)", "description-short": "I was hired by my church to make Vector art for their annual Bible summer camp. The images appeared on the camp T-shirts. \n I presented several options for the design, and the committee selected the coat of arms logo. \n I incorporated several biblical motifs within the design, grape vines, a dove, the trinity, a crown, and a cross.", "image_w": 0, "image_h": 0, "link": "", "link-label": "", "image": "artwork/keepers_white.png",
                         "subimages" : [
                             "artwork/2023 Keepers of the Kingdom/vbs2023_pre_digital.png", 
                             "artwork/2023 Keepers of the Kingdom/vbs2020_shield.jpg",
@@ -166,42 +185,57 @@
                             "artwork/2023 Keepers of the Kingdom/vbs2023_castle.jpg"
                         ]
                     },
-                    {"id": 4, "element_id": "art_zoomerang", "title": "Zoomerang Logo (2022)", "description-short": "I was hired by my church to make Vector art for their annual Bible summer camp. \n I presented two options, and was told to begin with a silhouette-esque logo. With the theme being the Australian outback, I added several Australian animals.", "image_w": 0, "image_h": 0, "link": "", "link-label": "", "image": "",
+                    {"id": 4, "element_id": "art_zoomerang", "title": "Zoomerang Logo (2022)", "description-short": "I was hired by my church to make Vector art for their annual Bible summer camp. The images appeared on the camp T-shirts. \n I presented two options, and was told to begin with a silhouette-esque logo. With the theme being the Australian outback, I added several Australian animals.", "image_w": 0, "image_h": 0, "link": "", "link-label": "", "image": "artwork/zoomerang_white.png",
                         "subimages" : [
                             "artwork/2022 Zoomerang/zoomerang_concept_silhouette.jpg",
                             "artwork/2022 Zoomerang/zoomerang_concept_swoosh.jpg",
                             "artwork/2022 Zoomerang/zoomerang_pre_digital.png",
-                            "artwork/2022 Zoomerang/zoomeranginheritalpha.png",
-                            "artwork/2022 Zoomerang/zoomeranglogo_2.png"
+                            "artwork/2022 Zoomerang/zoomeranginheritalpha.png"
                         ]
                     },
-                    {"id": 5, "element_id": "art_rocky", "title": "Rocky Railway Logo (2020)", "description-short": "I was hired by my church to make Vector art for their annual Bible summer camp. \n The summer camp had a mountain railroad theme, so I designed a seal with a train on a mountain rail.", "image_w": 0, "image_h": 0, "link": "", "link-label": "", "image": "",
+                    {"id": 5, "element_id": "art_rocky", "title": "Rocky Railway Logo (2020)", "description-short": "I was hired by my church to make Vector art for their annual Bible summer camp. The images appeared on the camp T-shirts. \n The summer camp had a mountain railroad theme, so I designed a seal with a train on a mountain rail.", "image_w": 0, "image_h": 0, "link": "", "link-label": "", "image": "artwork/Rocky_white.png",
                         "subimages" : [
                             "artwork/2020 Rocky Railway/rocky_blue.png",
                             "artwork/2020 Rocky Railway/rocky_dark_blue.png"
                         ] 
                     },
-                    {"id": 6, "element_id": "art_wild", "title": "In the Wild Logo (2019)", "description-short": "I was hired by my church to make Vector art for their annual Bible summer camp. \n This was my first year working with my church on designs. With the theme being an wildlife safari, I decided to add a camera and animal prints to the design.", "image_w": 0, "image_h": 0, "link": "", "link-label": "", "image": "",
+                    {"id": 6, "element_id": "art_wild", "title": "In the Wild Logo (2019)", "description-short": "I was hired by my church to make Vector art for their annual Bible summer camp. The images appeared on the camp T-shirts. \n This was my first year working with my church on designs. With the theme being an wildlife safari, I decided to add a camera and animal prints to the design.", "image_w": 0, "image_h": 0, "link": "", "link-label": "", "image": "artwork/in_the_wild_white.PNG",
                         "subimages" : [
                         ]
                     },
-                    {"id": 7, "element_id": "art_knifophia", "title": "Kniphofia (2021)", "description-short": "Digital art of a person with Knifophia flowers next to her.", "image_w": 0, "image_h": 0, "link": "", "link-label": "", "image": "",
+                    {"id": 7, "element_id": "art_knifophia", "title": "Knifophia (2021)", "description-short": "Digital art of a person with Knifophia flowers next to her.", "image_w": 0, "image_h": 0, "link": "", "link-label": "", "image": "artwork/kniphophia.png",
                         "subimages" : [
                         ]
                     },
-                    {"id": 8, "element_id": "art_whiteboard", "title": "Whiteboard (2021)", "description-short": "Graphic of a person with pointing at a blank whiteboard.", "image_w": 0, "image_h": 0, "link": "", "link-label": "", "image": "",
+                    {"id": 8, "element_id": "art_whiteboard", "title": "Whiteboard (2021)", "description-short": "Graphic of a person with pointing at a blank whiteboard.", "image_w": 0, "image_h": 0, "link": "", "link-label": "", "image": "artwork/whiteboard.png",
                         "subimages" : [
                         ]
                     },
-                    {"id": 9, "element_id": "art_small", "title": "Small Church Logos (2023)", "description-short": "I was hired by my church to make a design for merch for their \"Small Church\" community groups.", "image_w": 0, "image_h": 0, "link": "", "link-label": "", "image": "",
+                    {"id": 9, "element_id": "art_small", "title": "Small Church Logos (2023)", "description-short": "I was hired by my church to make a design for their \"Small Church\" community groups. The images appeared in marketing material and merchandise.", "image_w": 0, "image_h": 0, "link": "", "link-label": "", "image": "",
+                        "subimages" : [
+                            "artwork/SmallChurchLogo/sc_ring_logo_filled.png",
+                            "artwork/SmallChurchLogo/mindanao_sc_logo.png",
+                            "artwork/SmallChurchLogo/sc_pop_dark_gradient.png"
+                        ]
+                    },
+                    {"id": 10, "element_id": "art_urchins", "title": "Urchin Band (2022)", "description-short": "", "image_w": 0, "image_h": 0, "link": "", "link-label": "", "image": "artwork/urchins.png",
                         "subimages" : [
                         ]
                     },
-                    {"id": 10, "element_id": "art_urchins", "title": "Urchin Band (2022)", "description-short": "", "image_w": 0, "image_h": 0, "link": "", "link-label": "", "image": "",
+                    {"id": 11, "element_id": "art_dnd", "title": "DND Party Painting (2023)", "description-short": "", "image_w": 0, "image_h": 0, "link": "", "link-label": "", "image": "artwork/DND_crop.png",
                         "subimages" : [
+                        ]
+                    }, 
+                    {"id": 12, "element_id": "art_quickreads", "title": "Icons for Quickreads (2023)", "description-short": "These are interface icons for an AI-summarized news app I worked on in my junior year. Their subjects are \"Add news category\", \"News feed\", \"Weekly newsletter\", and \"Settings\".", "image_w": 0, "image_h": 0, "link": "", "link-label": "", "image": "",
+                        "subimages" : [
+                        "artwork/Quickreads/quickreads_category_icon.png",
+                        "artwork/Quickreads/quickreads_feed_icon.png",
+                        "artwork/Quickreads/quickreads_newsletter_icon.png",
+                        "artwork/Quickreads/quickreads_settings_icon.png"
                         ]
                     }
                 ]
+
                 console.log(artwork_data); 
 
                 const artwork_container = document.getElementById("artwork_container"); 
@@ -210,9 +244,9 @@
                 artwork_data.forEach((project) => { 
 
                     if (project.element_id && project.element_id != "") { // make it clickable
-                        const clickable = document.getElementById(project.element_id); 
-
-                        clickable.onclick = function() { // display the modal
+                        const thumbnail = document.getElementById(project.element_id); 
+                        if (thumbnail) { //the thumbnail exists
+                            thumbnail.onclick = function() { // display the modal
                             modal.style.display = "block"; // make block visible. 
                             
                             modal_body.innerHTML = `<h2>${project.title || ""}</h2>`; // add body content
@@ -222,6 +256,11 @@
                                 image_elems += `<div class="gallery_col"><img src="${img}"/></div>`
                             }); 
                             modal_body.innerHTML += `<div class="gallery_row">${image_elems}</div>`
+                            if (project.image != undefined || project.image != ""){
+
+                                modal_body.innerHTML += `<img style="height: 50%;" src=${project.image}></img>`; // add main image
+                            }
+                        }
                         }
                     }
                 })
