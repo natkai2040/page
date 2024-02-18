@@ -39,15 +39,17 @@
         <div class="main-container" id="main-container">
             
             <h1>ART PORTFOLIO</h1>
-            <div class="icons">
-                <a class="transparentbutton" href="https://www.instagram.com/natanco.art" target="_blank" title="My Art Instagram">
-                    <img class="icon grow" src="icons/instagram.svg"/>
-                </a>
-            </div>
+
             <h2>I am an artist with a focus in digital design and illustration.</h2>
-            <h3>(Click Images for Additional Info)</h3>
+            <h2>More varied art on 
+                <a class= "link grow" href="https://www.instagram.com/natanco.art" target="_blank" title="My Art Instagram">
+                    My Art Instagram
+                </a>!
+            </h2>
 
             <hr class="divider">
+            <h3>(Click Images for Additional Info)</h3>
+
 
             <!-- MODAL -->
 
@@ -80,7 +82,51 @@
                 </div>
             </div>
 
-            <h2>DIGITAL ARTWORK</h2>
+            <h2>ANIMATION AND 3D ARTWORK</h2>
+
+            <div class="gallery_row">
+                <div class="gallery_col">
+                    <div class="gallery_col">
+                        <img id="art_donut" class="art_thumbnail grow" src="artwork/donut_thumbnail.png"/>
+                    </div>
+                </div>
+                <div class="gallery_col">
+                    <video class ="modal-image" controls="controls" >
+                        <source class ="art_thumbnail" src="./artwork/donut_anim.mp4" type="video/mp4" />
+                    </video>
+                </div>
+                <div class="gallery_col">
+                    <video class ="modal-image" controls="controls" >
+                        <source class ="art_thumbnail" src="./artwork/shallan_anim.mp4" type="video/mp4" />
+                    </video>
+                </div>
+                <div class="gallery_col">
+                    <div class="gallery_col">
+                        <img id="art_shallan" class="art_thumbnail grow" src="artwork/shallan_bright_render.png"/>
+                    </div>
+                </div>
+            </div>
+
+
+            <h2>DIGITAL ILLUSTRATION</h2>
+            <div class="gallery_row">
+                <div class="gallery_col">
+                    <img id="art_knifophia" max_height="100px" class="art_thumbnail grow" src="artwork/kniphophia.png"/>
+                </div>
+                <div class="gallery_col">
+                    <img id="art_urchins" max_height="100px" class="art_thumbnail grow" src="artwork/urchins.png"/>
+                </div>  
+            </div>
+            <div class="gallery_row">  
+                <!-- <div class="gallery_col">
+                    <img id="art_whiteboard" max_height="100px" class="art_thumbnail grow" src="artwork/whiteboard.png"/>
+                </div> -->
+                <div class="gallery_col" >
+                    <img id="art_dnd" class="art_thumbnail grow"  src="artwork/DND_crop.png"/>
+                </div>
+            </div>
+
+            <h2>ICONS AND UI</h2>
             
             <div id="art_small" class="gallery_row">
                 <div class="gallery_col">
@@ -109,49 +155,6 @@
             </div>
 
 
-            <h2>ANIMATION AND 3D ARTWORK</h2>
-
-            <div class="gallery_row">
-                <div class="gallery_col">
-                    <div class="gallery_col">
-                        <img id="art_donut" class="art_thumbnail grow" src="artwork/donut_thumbnail.png"/>
-                    </div>
-                </div>
-                <div class="gallery_col">
-                    <video class ="modal-image" controls="controls" >
-                        <source class ="art_thumbnail" src="./artwork/donut_anim.mp4" type="video/mp4" />
-                    </video>
-                </div>
-                <div class="gallery_col">
-                    <video class ="modal-image" controls="controls" >
-                        <source class ="art_thumbnail" src="./artwork/shallan_anim.mp4" type="video/mp4" />
-                    </video>
-                </div>
-                <div class="gallery_col">
-                    <div class="gallery_col">
-                        <img id="art_shallan" class="art_thumbnail grow" src="artwork/shallan_bright_render.png"/>
-                    </div>
-                </div>
-            </div>
-
-
-            <h2>MISC ILLUSTRATION</h2>
-            <div class="gallery_row">
-                <div class="gallery_col">
-                    <img id="art_knifophia" max_height="100px" class="art_thumbnail grow" src="artwork/kniphophia.png"/>
-                </div>
-                <div class="gallery_col">
-                    <img id="art_urchins" max_height="100px" class="art_thumbnail grow" src="artwork/urchins.png"/>
-                </div>  
-            </div>
-            <div class="gallery_row">  
-                <!-- <div class="gallery_col">
-                    <img id="art_whiteboard" max_height="100px" class="art_thumbnail grow" src="artwork/whiteboard.png"/>
-                </div> -->
-                <div class="gallery_col" >
-                    <img id="art_dnd" class="art_thumbnail grow"  src="artwork/DND_crop.png"/>
-                </div>
-            </div>
 
             <script>
                 let span = document.getElementsByClassName("close")[0];
