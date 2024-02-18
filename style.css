@@ -30,7 +30,17 @@ h1 {
     color: rgb(21, 63, 106);
     font-size: 4em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
+h2 { 
+    color: rgb(21, 63, 106);
+    font-size: 2.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h3 { 
+    color: rgb(21, 63, 106);
+    font-size: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 a { 
@@ -171,7 +181,7 @@ a {
 }
 
 img {
-    max-width: 100%;
+    max-width: 100%; 
     height: auto; 
 }
 
@@ -218,3 +228,77 @@ img {
     width: 100%; 
     /* height: 100%; */
 }
+
+.modal { /*the background/modal*/
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0; /*TODO: understand */
+    top: 0; 
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; /* Enables scroll */
+    background-color: rgb(0,0,0); 
+    background-color: rgba(255, 255, 255, 0.4); 
+}
+
+.modal-content {  /*the box*/
+    background-color: #fefefe; 
+    margin: 15% auto; 
+    padding: 20px; 
+    border: 1px solid #888; 
+    width: 80%; 
+    border-radius: 20px;
+}
+
+.modal-image { 
+    max-height: 500px;
+}
+
+.close {
+    color: #aaa; 
+    float: right; 
+    font-size: 28px; 
+    font-weight: bold; 
+}
+
+.close:hover, 
+.close:focus {
+    color: black; 
+    text-decoration: none; 
+    cursor: pointer; 
+}
+
+.thumbnail:hover {
+    cursor:zoom-in; 
+}
+
+/* 
+
+.gallery_col {
+    float:left;
+    width: 20%;
+    padding: 5px;
+    height: auto; 
+}
+
+.gallery_row::after {
+    content: "";
+    clear: both;
+    display: table;
+} */
+
+.gallery_row {
+    display: flex;
+    width:80%; 
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 1em;
+  }
+  
+  .gallery_col {
+    flex: 20%;
+    padding: 1em;
+    /* max-height: 500px; */
+  }
+  
