@@ -82,7 +82,7 @@
                         "id": 3,
                         "title": "QuickReads Android App Frontend", 
                         "description-short": "I worked with six developers to create an app that provides a feed of AI-summarized news stories. I was in charge of the frontend.",
-                        "image": "QuickReadsLogo.png",
+                        "image": "quickreads_aspect.png",
                         "link": "https://github.com/stgandham1/QuickReads", 
                         "link-label": "repository"
                     },
@@ -110,7 +110,9 @@
 
                 // CREATE DATA ELEMENT
                 data.forEach((project) => { 
+
                     const project_container = document.createElement("div"); 
+                    const thumbnail_container = document.createElement("div");
                     const thumbnail = document.createElement("img"); 
                     const text_side_container = document.createElement("div"); 
                     const title = document.createElement("h1"); 
@@ -119,34 +121,36 @@
                     const link = document.createElement("a"); 
 
                     project_container.className = "project-container border sidebyside"; 
+                    thumbnail_container.className = "project-image-container";
                     thumbnail.className = "project-image"; 
                     text_side_container.className = "text-side"; 
                     textbox_container.className = "textbox"
-                    link_container.className = "textbox-link"; 
-                    link_container.target = "_blank"; 
+                    link_container.className = "textbox-link";
+                    link.target= "_blank"; 
 
                     title.innerHTML = project.title; 
                     thumbnail.src = `./images/${project.image}`; // images should be in the ./images folder
+
                     // thumbnail.width = project.image_w;
                     // thumbnail.height = project.image_h;
-                    thumbnail.style = `max-height: ${window.screen.height};`
                     textbox_container.innerHTML = project["description-short"];
-                    link.href = project.link; 
+                    link.href = project.link;
                     link.innerHTML = project["link-label"]; 
 
                     link_container.appendChild(link); 
                     textbox_container.appendChild(link_container); 
                     text_side_container.appendChild(title); 
                     text_side_container.appendChild(textbox_container); 
+                    thumbnail_container.appendChild(thumbnail);
+
                     // alternate to put thumbnail or textbox on left or right
                     if (project.id%2 == 0){
-                        project_container.appendChild(thumbnail); 
+                        project_container.appendChild(thumbnail_container); 
                         project_container.appendChild(text_side_container); 
                     } else {
                         project_container.appendChild(text_side_container); 
-                        project_container.appendChild(thumbnail); 
+                        project_container.appendChild(thumbnail_container); 
                     }
-
                     // GUIDE TO DIV: 
                     // <div class="project-container border sidebyside" >
                     //     <img class="project-image" src="images/QuickReadsLogo.png"/>
@@ -170,7 +174,7 @@
         </div>
         
         <footer>
-            <div class="footer_box"style="color: white; padding:1em; ">
+            <div class="footer_box"style="color: white; padding:1em;">
                  
                 <a href="https://github.com/natkai2040/page" target="_blank" style="color: white;">Website coded in HTML/CSS/JS</a>
             </div>

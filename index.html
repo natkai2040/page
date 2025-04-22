@@ -24,7 +24,7 @@
             </div>  
             <div class="navbar-link grow"> 
                 <a href="./art_gallery.html" title="Art" target="_self" >
-                    Art
+                    Art/Design
                 </a>
             </div>  
             
@@ -111,7 +111,7 @@
                         "id": 3,
                         "title": "QuickReads Android App Frontend", 
                         "description-short": "I worked with six developers to create an app that provides a feed of AI-summarized news stories. I was in charge of the frontend.",
-                        "image": "QuickReadsLogo.png",
+                        "image": "quickreads_aspect.png",
                         "link": "https://github.com/stgandham1/QuickReads", 
                         "link-label": "repository"
                     },
@@ -141,6 +141,7 @@
                 data.forEach((project) => { 
 
                     const project_container = document.createElement("div"); 
+                    const thumbnail_container = document.createElement("div");
                     const thumbnail = document.createElement("img"); 
                     const text_side_container = document.createElement("div"); 
                     const title = document.createElement("h1"); 
@@ -149,6 +150,7 @@
                     const link = document.createElement("a"); 
 
                     project_container.className = "project-container border sidebyside"; 
+                    thumbnail_container.className = "project-image-container";
                     thumbnail.className = "project-image"; 
                     text_side_container.className = "text-side"; 
                     textbox_container.className = "textbox"
@@ -168,13 +170,15 @@
                     textbox_container.appendChild(link_container); 
                     text_side_container.appendChild(title); 
                     text_side_container.appendChild(textbox_container); 
+                    thumbnail_container.appendChild(thumbnail);
+
                     // alternate to put thumbnail or textbox on left or right
                     if (project.id%2 == 0){
-                        project_container.appendChild(thumbnail); 
+                        project_container.appendChild(thumbnail_container); 
                         project_container.appendChild(text_side_container); 
                     } else {
                         project_container.appendChild(text_side_container); 
-                        project_container.appendChild(thumbnail); 
+                        project_container.appendChild(thumbnail_container); 
                     }
 
                     // GUIDE TO DIV: 
