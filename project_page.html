@@ -29,7 +29,7 @@
             </div>  
             
             <div class="navbar-link grow">
-                <a href="./attachments/Nathaniel Wai Resume_SentNW.pdf" title="Nathaniel's CV" target="_blank" >
+                <a href="./attachments/Nathaniel_Wai_Resume_4_29_2026_UI.pdf" title="Nathaniel's CV" target="_blank" >
                     CV
                 </a>
             </div>     
@@ -55,6 +55,7 @@
                     {
                         "id": 0,
                         "title": "New England River Data Visualization", 
+                        "date": "2025",
                         "description-short": "I used a cloudflare database to store and visuzalize data on New England Rivers. Along with two others, I used D3.js to create a custom visualization of the data.", 
                         "image": "river-analysis-screenshot.png", 
                         "link": "https://johnr425.github.io/New-England-River-Analysis/", 
@@ -63,6 +64,7 @@
                     {
                         "id": 1,
                         "title": "Art Arranger Web App", 
+                        "date": "2024",
                         "description-short": "Node/ExpressJS app that allows users to arrange public art onto a virtual wall, as well as share and rank different virtual walls.",
                         "image": "artarrangerIMAGE1.png", 
                         "image_w": 5, 
@@ -73,6 +75,7 @@
                     {
                         "id": 4,
                         "title": "UMass DRC Logo Work", 
+                        "date": "2024",
                         "description-short": "A designed a diverse set of logos representing each of UMass's Residential Communities.", 
                         "image": "DRC_logo_barrio.png",
                         "link": "https://www.linkedin.com/in/nathaniel-wai/overlay/1716411519529/single-media-viewer/?profileId=ACoAADLS0G4BCOkmJgCUtpJXsWluSOu_PewWJ_Q", 
@@ -81,6 +84,7 @@
                     {
                         "id": 5,
                         "title": "Course Prerequisite Management API", 
+                        "date": "2024",
                         "description-short": "An API that stores, models, and graphs UMass academic course prerequisite relationships. Completed for a web systems class.", 
                         "image": "prereqAPI_thumb.png",
                         "link": "https://github.com/natkai2040/class-prereq-api", 
@@ -89,6 +93,7 @@
                     {
                         "id": 3,
                         "title": "QuickReads Android App Frontend", 
+                        "date": "2022",
                         "description-short": "I worked with six developers to create an app that provides a feed of AI-summarized news stories. I was in charge of the frontend.",
                         "image": "quickreads_aspect.png",
                         "link": "https://github.com/stgandham1/QuickReads", 
@@ -97,6 +102,7 @@
                     {
                         "id": 2,
                         "title": "VAE MIDI Training and Music Generation", 
+                        "date": "2022",
                         "description-short": "I created a VAE that trains on visualized MIDI files to generate new music.", 
                         "image": "piatorolltrainingdata.png", 
                         "link": "https://www.kaggle.com/code/nathanielwai/piano-roll-vae", 
@@ -114,6 +120,8 @@
                     const thumbnail = document.createElement("img"); 
                     const text_side_container = document.createElement("div"); 
                     const title = document.createElement("h1"); 
+                    const subtitle_container = document.createElement("h2"); 
+
                     const textbox_container = document.createElement("div"); 
                     const link_container = document.createElement("div"); 
                     const link = document.createElement("a"); 
@@ -132,12 +140,14 @@
                     // thumbnail.width = project.image_w;
                     // thumbnail.height = project.image_h;
                     textbox_container.innerHTML = project["description-short"];
+                    subtitle_container.innerHTML = project["date"];
                     link.href = project.link;
                     link.innerHTML = project["link-label"]; 
 
                     link_container.appendChild(link); 
                     textbox_container.appendChild(link_container); 
                     text_side_container.appendChild(title); 
+                    text_side_container.appendChild(subtitle_container);
                     text_side_container.appendChild(textbox_container); 
                     thumbnail_container.appendChild(thumbnail);
 

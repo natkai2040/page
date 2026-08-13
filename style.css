@@ -36,12 +36,14 @@ h2 {
     color: rgb(21, 63, 106);
     font-size: 2.5em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
 }
 
 h3 { 
     color: rgb(21, 63, 106);
     font-size: 2em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
 }
 
 a { 
@@ -167,7 +169,7 @@ a {
 
 .project-container { 
     width: 80%;
-    padding: 1%; /** TODO: hardcoded*/
+    padding: 0%; /** TODO: hardcoded*/
     margin: 2% 0% 2% 0%;
 }
 

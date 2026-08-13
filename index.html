@@ -29,7 +29,7 @@
             </div>  
             
             <div class="navbar-link grow">
-                <a href="./attachments/Nathaniel Wai Resume_SentNW.pdf" title="Nathaniel's CV" target="_blank" >
+                <a href="./attachments/Nathaniel_Wai_Resume_4_29_2026_UI.pdf" title="Nathaniel's CV" target="_blank" >
                     CV
                 </a>
             </div>     
@@ -47,10 +47,9 @@
                     <h1>Hi! I'm Nathaniel.</h1>
 
                     <div class="textbox">
-                        I'm a fourth-year student pursuing a double-major in computer science and statistics.
-                        I have a strong foundation in web app development, machine learning, and data analysis. 
-                        
-                        <p>I also design graphics with 2D and 3D software.</p>
+                        I am a graduate of the University of Massachusetts with a B.S in Computer Science and Statistical Mathematics, and an M.S. in Computer Science.
+                        <p>In the past, I have managed backend database systems for non-profits, designed and built a website for a wholesale company, and developed many more apps in team-based and solo settings during my time at UMass. </p>
+                        <p>I also love to design graphics with 2D and 3D software.</p>
 
                         <p>Reach me at nkcwai@gmail.com</p>
                     </div>
@@ -70,7 +69,7 @@
                     </div>
                 </div>
                 <div class="profilepic_container">
-                    <img class="profilepic" width="776" height="919" src="images/headshot.png"/>
+                    <img class="profilepic" width="1093" height="4441" src="images/headshot2.png"/>
                 </div>
 
             </div>
@@ -83,15 +82,35 @@
                 const data = [
                     {
                         "id": 0,
+                        "title": "Collectible Marketplace with AI Assistance", 
+                        "date": "2026",
+                        "description-short": "I integrated an AI assistant in a marketplace app that help users reason with complex sales data. This was a team-based semester project for a Human-Computer Interaction course.", 
+                        "image": "collectibles.png", 
+                        "link": "https://tomwang22.github.io/market-ai-prototype/?condition=inspectable", 
+                        "link-label": "Visit the Website Here"
+                    },
+                    {
+                        "id": 1,
+                        "title": "Wholesale Company Website Redesign", 
+                        "date": "2025",
+                        "description-short": "I completely designed and revamped a company website, utilizing SEO to increase traffic in Asian markets. The website also has multiple language support.", 
+                        "image": "wholesale_screenshot.png", 
+                        "link": "https://desmarglobal.com/", 
+                        "link-label": "Visit the Website Here"
+                    },
+                    {
+                        "id": 2,
                         "title": "New England River Data Visualization", 
+                        "date": "2025",
                         "description-short": "I used a cloudflare database to store and visuzalize data on New England Rivers. Along with two others, I used D3.js to create a custom visualization of the data.", 
                         "image": "river-analysis-screenshot.png", 
                         "link": "https://johnr425.github.io/New-England-River-Analysis/", 
                         "link-label": "Website"
                     },
                     {
-                        "id": 1,
+                        "id": 3,
                         "title": "Art Arranger Web App", 
+                        "date": "2024",
                         "description-short": "Node/ExpressJS app that allows users to arrange public art onto a virtual wall, as well as share and rank different virtual walls.",
                         "image": "artarrangerIMAGE1.png", 
                         "image_w": 5, 
@@ -102,6 +121,7 @@
                     {
                         "id": 4,
                         "title": "UMass DRC Logo Work", 
+                        "date": "2024",
                         "description-short": "A designed a diverse set of logos representing each of UMass's Residential Communities.", 
                         "image": "DRC_logo_barrio.png",
                         "link": "https://www.linkedin.com/in/nathaniel-wai/overlay/1716411519529/single-media-viewer/?profileId=ACoAADLS0G4BCOkmJgCUtpJXsWluSOu_PewWJ_Q", 
@@ -110,22 +130,25 @@
                     {
                         "id": 5,
                         "title": "Course Prerequisite Management API", 
+                        "date": "2024",
                         "description-short": "An API that stores, models, and graphs UMass academic course prerequisite relationships. Completed for a web systems class.", 
                         "image": "prereqAPI_thumb.png",
                         "link": "https://github.com/natkai2040/class-prereq-api", 
                         "link-label": "Code Repository"
                     },
                     {
-                        "id": 3,
+                        "id": 6,
                         "title": "QuickReads Android App Frontend", 
+                        "date": "2022",
                         "description-short": "I worked with six developers to create an app that provides a feed of AI-summarized news stories. I was in charge of the frontend.",
                         "image": "quickreads_aspect.png",
                         "link": "https://github.com/stgandham1/QuickReads", 
                         "link-label": "Code Repository"
                     },
                     {
-                        "id": 2,
+                        "id": 7,
                         "title": "VAE MIDI Training and Music Generation", 
+                        "date": "2022",
                         "description-short": "I created a VAE that trains on visualized MIDI files to generate new music.", 
                         "image": "piatorolltrainingdata.png", 
                         "link": "https://www.kaggle.com/code/nathanielwai/piano-roll-vae", 
@@ -143,6 +166,8 @@
                     const thumbnail = document.createElement("img"); 
                     const text_side_container = document.createElement("div"); 
                     const title = document.createElement("h1"); 
+                    const subtitle_container = document.createElement("h2"); 
+
                     const textbox_container = document.createElement("div"); 
                     const link_container = document.createElement("div"); 
                     const link = document.createElement("a"); 
@@ -161,12 +186,14 @@
                     // thumbnail.width = project.image_w;
                     // thumbnail.height = project.image_h;
                     textbox_container.innerHTML = project["description-short"];
+                    subtitle_container.innerHTML = project["date"];
                     link.href = project.link;
                     link.innerHTML = project["link-label"]; 
 
                     link_container.appendChild(link); 
                     textbox_container.appendChild(link_container); 
                     text_side_container.appendChild(title); 
+                    text_side_container.appendChild(subtitle_container);
                     text_side_container.appendChild(textbox_container); 
                     thumbnail_container.appendChild(thumbnail);
 
